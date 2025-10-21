@@ -4,7 +4,9 @@
  */
 package bullet_club.entity;
 
-public class User {
+import bullet_club.model.Dol.Data_Conn;
+
+public class User implements Data_Conn{
 private   int id;
 private String username;
 private String role ;
@@ -79,31 +81,11 @@ private String phone;
         this.phone = phone;
     }
 
-void login(String user,String pass){
-   /* try{
-    }catch(){
-        
-        
+    @Override
+    public String toString() {
+        return "User{" + "id=" + id + ", username=" + username + ", role=" + role + ", password=" + password + ", add=" + add + ", email=" + email + ", phone=" + phone + '}';
+    }
 
-}*/
-}
-void logout(){
-   /* try{
-    }catch(){
-        
-        
-
-}*/
-}
-
-void change_password(String user,String pass){
-   /* try{
-    }catch(){
-        
-        
-
-}*/
-}
 
 
 

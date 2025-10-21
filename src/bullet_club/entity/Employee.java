@@ -13,12 +13,6 @@ public class Employee extends User {
     public Employee(int id, String username, String role, String password, String add, String email, String phone) {
         super(id, username, role, password, add, email, phone);
     }
-  public void place_order(){
-  /* try 
-      {}
-      catch(){}
-      */
-  
-  }
+
     
 }
