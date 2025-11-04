@@ -6,6 +6,7 @@ package bullet_club.entity;
 import  bullet_club.entity.Order_Details;
 import java.time.LocalDate;
 import java.util.ArrayList;
+import java.util.Date;
 
 /**
  *
@@ -15,10 +16,10 @@ public class Order {
    private int id;
    private String status;
    private int total_Amount;
-   private LocalDate date;
+   private Date date;
    private ArrayList<Order_Details> items;
  ArrayList<Order> orders=new ArrayList<>() ;
-    public Order(int id, String status, int total_Amount, LocalDate date, ArrayList<Order_Details> items) {
+    public Order(int id, String status, int total_Amount, Date date, ArrayList<Order_Details> items) {
         this.id = id;
         this.status = status;
         this.total_Amount = total_Amount;
@@ -52,11 +53,11 @@ if(this.status=="ACC")
         this.total_Amount = total_Amount;
     }
 
-    public LocalDate getDate() {
+    public Date getDate() {
         return date;
     }
 
-    public void setDate(LocalDate date) {
+    public void setDate(Date date) {
         this.date = date;
     }
 
